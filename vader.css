@@ -1,20 +1,24 @@
-/* Vader.css 
- * =========
+/* Vader.css v0.1.2
+ * ================
  * Project: https://github.com/oxalorg/Vader.css
  */
+/* $color-text: #dedce5; */
 /* Body */
 html {
-  font-family: Menlo;
+  font-family: sans-serif;
   font-size: 18px; }
 
 body {
-  color: #dedce5;
+  line-height: 1.618;
+  max-width: 684px;
+  margin: auto;
+  color: #d9d8dc;
   background-color: #120c0e; }
 
-p {
-  text-align: justify; }
-
 h1, h2, h3, h4, h5, h6 {
+  font-family: serif;
+  margin-bottom: 14.4px;
+  margin-top: 39.6px;
   font-weight: 500; }
 
 h1 {
@@ -35,14 +39,18 @@ h5 {
 h6 {
   font-size: 18px; }
 
+small, sub, sup {
+  font-size: 65%; }
+
+hr {
+  border-color: #eb99a1; }
+
 a {
   text-decoration: none;
-  color: #eb99a1;
-  border-bottom: 1px solid #DA4453; }
-
-a:hover {
-  color: #DA4453;
-  border-bottom: 2px solid #dedce5; }
+  color: #eb99a1; }
+  a:hover {
+    color: #DA4453;
+    border-bottom: 2px solid #d9d8dc; }
 
 ul {
   padding-left: 1.4em; }
@@ -88,14 +96,14 @@ td, th {
 
 /* Buttons, forms and input */
 input, textarea {
-  border: 1px solid #dedce5; }
+  border: 1px solid #d9d8dc; }
   input:focus, textarea:focus {
     border: 1px solid #eb99a1; }
 
 .button, button, input[type="submit"], input[type="reset"], input[type="button"] {
   display: inline-block;
   padding: 0 30px;
-  color: #dedce5;
+  color: #d9d8dc;
   text-align: center;
   font-size: 11px;
   font-weight: 600;
@@ -105,7 +113,7 @@ input, textarea {
   white-space: nowrap;
   background-color: transparent;
   border-radius: 4px;
-  border: 1px solid #dedce5;
+  border: 1px solid #d9d8dc;
   cursor: pointer;
   box-sizing: border-box; }
   .button:focus, .button:hover, button:focus, button:hover, input[type="submit"]:focus, input[type="submit"]:hover, input[type="reset"]:focus, input[type="reset"]:hover, input[type="button"]:focus, input[type="button"]:hover {
@@ -114,7 +122,7 @@ input, textarea {
     outline: 0; }
 
 textarea, select, input[type] {
-  color: #dedce5;
+  color: #d9d8dc;
   padding: 6px 10px;
   /* The 6px vertically centers text on FF, ignored by Webkit */
   margin-bottom: 10px;
